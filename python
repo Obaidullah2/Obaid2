@@ -1,0 +1,208 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPuxyJ4XQMma87OjL37fVLm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Obaidullah2/Obaid2/blob/main/python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LrmHO-Zwq2HA",
+        "outputId": "746dd249-b5d6-4b6d-b94a-20b8d86a6b15"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "my favourite english rythme\n"
+          ]
+        }
+      ],
+      "source": [
+        "print (\"my favourite english rythme\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"johnny johnny yes papa\")\n",
+        "print (\"eating sugar no papa\")\n",
+        "print(\"telling lies no papa\")\n",
+        "print(\"open your mouth hahaha\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LoFQEtF0rLno",
+        "outputId": "b14966f7-8b81-43aa-e88b-e93cdf8914f7"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "johnny johnny yes papa\n",
+            "eating sugar no papa\n",
+            "telling lies no papa\n",
+            "open your mouth hahaha\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import sys\n",
+        "print(\"Python version\")\n",
+        "print(sys.version)\n",
+        "\n",
+        "print(\"version info.\")\n",
+        "print(sys.version_info)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CYNK18ZOzxwE",
+        "outputId": "7eb53e5d-6c32-4597-c700-9a742b9a62a0"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python version\n",
+            "3.7.14 (default, Sep  8 2022, 00:06:44) \n",
+            "[GCC 7.5.0]\n",
+            "version info.\n",
+            "sys.version_info(major=3, minor=7, micro=14, releaselevel='final', serial=0)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from datetime import date\n",
+        "today=date.today()\n",
+        "print(\"today's date:\", today)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xqPVU60O03Wm",
+        "outputId": "cf96479b-cc3c-4008-fa10-1b3884012419"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "today's date: 2022-09-29\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from datetime import date\n",
+        "today=date.today()\n",
+        "#dd/mm/YY\n",
+        "d1=today.strftime(\"%d/%m/%Y\")\n",
+        "print(\"d1=\", d1)\n",
+        "\n",
+        "#textual month,day and year\n",
+        "d2=today\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H3xx6Uqd1zIG",
+        "outputId": "64703903-a2ff-47d0-b62b-0c972abb97d9"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "d1= 29/09/2022\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Vc4ZPSAL4S4-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from datetime import datetime\n",
+        "#datatime object containing current date and time\n",
+        "now=datetime.now()\n",
+        "\n",
+        "print(\"now=\", now)\n",
+        "#dd/mm/yy H:M:S\n",
+        "dt_string=now\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zQ-em1HN4Bss",
+        "outputId": "a329e916-8029-414e-ad47-70108410e56c"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "now= 2022-09-29 15:34:09.661542\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
